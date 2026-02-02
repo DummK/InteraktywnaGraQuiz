@@ -1,0 +1,69 @@
+body {
+    background-image: url("res/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.page {
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 50vw;
+    background-color: rgba(146, 158, 158, 0.5);
+    border-radius: 10px;
+}
+
+#startPage {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    row-gap: 12vw;
+}
+
+.startPageTitle > h1 {
+    font-weight: normal;
+    font-size: 5vw;
+    font-family: 'Rubik', sans-serif;
+    animation-name: colorShift;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorShift {
+    0% {color: black}
+    25% {color: #ffffff}
+    50% {color: black}
+    75% {color: #ffffff}
+    100% {color: black}
+}
+
+.startPageTitle {
+    text-align: center;
+}
+
+.startPagePlayButton {
+    display: flex;
+    justify-content: center;
+}
+
+.startPagePlayButton > input {
+    all: unset;
+    appearance: none;
+    width: 15vw;
+    height: 3vw;
+    font-size: 2vw;
+    background-color: green;
+    text-align: center;
+    border: darkgreen solid 0.2vw;
+
+}
+
+.startPagePlayButton > input:hover {
+    background-color: rgba(0, 100, 0, 0.7);
+}
+
+.startPagePlayButton > input:active {
+    background-color: darkgreen;
+    border: green solid 0.2vw;
+}

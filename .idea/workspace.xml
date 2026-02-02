@@ -5,14 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c04fd1f-cd96-4cd6-a214-b7ef8d7a164a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Question.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/achievements.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/player.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/settings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tableOfQuestions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SrcHTML/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SrcHTML/res/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SrcHTML/res/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SrcHTML/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/QuizEngine.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Question.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/Question.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/achievements.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/achievements.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/Run.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/player.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/player.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tableOfQuestions.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/tableOfQuestions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,12 +27,26 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;DummK&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/DummK/InteraktywnaGraQuiz.git&quot;,
+    &quot;accountId&quot;: &quot;1b2f9407-ee05-4994-989b-8902da9cbab0&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -42,6 +60,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.index.html.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Node.js.Question.js.executor": "Run",
     "Node.js.index.js.executor": "Run",
@@ -52,18 +72,36 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "git-widget-placeholder": "main",
     "javascript.preferred.runtime.type.id": "node",
+    "junie.onboarding.icon.badge.shown": "true",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\all\Myapps\InteraktywnaGraQuiz\SrcHTML\res" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/InteraktywnaGraQuiz/SrcHTML/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.29346.242" />
+        <option value="bundled-js-predefined-d6986cc7102b-b598e85cdad2-JavaScript-WS-252.25557.126" />
       </set>
     </attachedChunks>
   </component>
@@ -76,6 +114,8 @@
       <updated>1769502351850</updated>
       <workItem from="1769502352609" duration="506000" />
       <workItem from="1769766585731" duration="5193000" />
+      <workItem from="1770040916826" duration="288000" />
+      <workItem from="1770041213726" duration="5143000" />
     </task>
     <servers />
   </component>
