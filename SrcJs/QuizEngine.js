@@ -1,4 +1,5 @@
 import {table} from "./tableOfQuestions";
+import {EasyQuestionFactor, MediumQuestionFactor, HardQuestionFactor, ExtremeQuestionFactor, Question}  from "./gameMechanics/Question";
 
 export class QuizEngine {
 

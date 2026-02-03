@@ -5,18 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c04fd1f-cd96-4cd6-a214-b7ef8d7a164a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/SrcHTML/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SrcHTML/res/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SrcHTML/res/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SrcHTML/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SrcJs/webMechanics/FormSubmitter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SrcJs/webMechanics/Router.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/QuizEngine.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Question.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/Question.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/achievements.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/achievements.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/Run.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/player.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/player.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/settings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tableOfQuestions.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/tableOfQuestions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SrcHTML/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/SrcHTML/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SrcHTML/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/SrcHTML/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SrcJs/Question.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/gameMechanics/Question.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SrcJs/QuizEngine.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/QuizEngine.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SrcJs/Run.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/Run.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SrcJs/achievements.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/gameMechanics/achievements.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SrcJs/player.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/gameMechanics/player.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SrcJs/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/gameMechanics/settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SrcJs/tableOfQuestions.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/tableOfQuestions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +26,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -58,33 +58,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.index.html.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Node.js.Question.js.executor": "Run",
-    "Node.js.index.js.executor": "Run",
-    "Node.js.main.js.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "main",
-    "javascript.preferred.runtime.type.id": "node",
-    "junie.onboarding.icon.badge.shown": "true",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Node.js.Question.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.index.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.main.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\all\Myapps\InteraktywnaGraQuiz\SrcJs\webMechanics" />
+      <recent name="D:\all\Myapps\InteraktywnaGraQuiz\SrcJs\gameMechanics" />
       <recent name="D:\all\Myapps\InteraktywnaGraQuiz\SrcHTML\res" />
     </key>
   </component>
@@ -115,7 +117,8 @@
       <workItem from="1769502352609" duration="506000" />
       <workItem from="1769766585731" duration="5193000" />
       <workItem from="1770040916826" duration="288000" />
-      <workItem from="1770041213726" duration="5143000" />
+      <workItem from="1770041213726" duration="14448000" />
+      <workItem from="1770127427466" duration="2403000" />
     </task>
     <servers />
   </component>

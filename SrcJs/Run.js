@@ -26,3 +26,19 @@
 · Dynamiczne dostosowywanie trudności
 *
 * */
+import {changeVisibility} from "./webMechanics/Router.js";
+import {saveSettings} from "./webMechanics/FormSubmitter.js";
+import {Settings} from "./gameMechanics/settings.js";
+
+let settings = new Settings();
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("startPageButtonId");
+    if (btn) {
+        btn.addEventListener("click", () => {
+            changeVisibility('startPage', 'settingsPage');
+        });
+    }
+});
+

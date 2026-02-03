@@ -1,4 +1,4 @@
-import {Question} from "./Question";
+import {Question} from "./gameMechanics/Question";
 
 export const table = [];
 {
