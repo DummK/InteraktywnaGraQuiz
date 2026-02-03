@@ -28,7 +28,8 @@
 * */
 import {changeVisibility} from "./webMechanics/Router.js";
 import {saveSettings} from "./webMechanics/FormSubmitter.js";
-import {Settings} from "./gameMechanics/settings.js";
+import {Settings} from "./gameMechanics/Settings.js";
+import {createForm} from "./webMechanics/UserInitialize.js";
 
 let settings = new Settings();
 
@@ -41,4 +42,17 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("settingsPageButtonId");
+    if (btn) {
+        btn.addEventListener("click", () => {
+            if(saveSettings() !== undefined) {
+                settings.updateSettings(saveSettings());
+                createForm(settings.playerAmount)
+                changeVisibility('settingsPage', 'userInitializationPage');
+            }
+        })
+    }
+})
 

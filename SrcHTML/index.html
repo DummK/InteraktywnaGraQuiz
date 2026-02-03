@@ -21,10 +21,10 @@
             <h1>Ustaw swoje ustawienia</h1>
         </div>
         <div class="settingsPageForm">
-            <label for="users" class="labelsForSettings">Liczba użytkowników</label><input type="number" name="amountOfUsers" id="users" value="1">
+            <label for="users" class="labelsForSettings">Liczba użytkowników</label><input type="number" name="amountOfUsers" class="inputs" id="users" value="1">
 
             <label for="selectDifficulty" class="labelsForSettings">Wybierz trudność pytań</label>
-            <select name="difficulty" id="selectDifficulty">
+            <select name="difficulty" id="selectDifficulty" class="inputs">
                 <option value="all">Jakakolwiek</option>
                 <option value="easy">Łatwa</option>
                 <option value="medium">Średnia</option>
@@ -33,25 +33,29 @@
             </select>
 
             <label for="selectAchievements" class="labelsForSettings">Czy włączyć osiągnięcia</label>
-            <select name="achievements" id="selectAchievements">
+            <select name="achievements" id="selectAchievements" class="inputs">
                 <option value="true">Tak</option>
                 <option value="false">Nie</option>
             </select>
 
             <label for="selectTimeMode" class="labelsForSettings">Czy włączyć ograniczenie czasowe</label>
-            <select name="timeMode" id="selectTimeMode">
+            <select name="timeMode" id="selectTimeMode" class="inputs">
                 <option value="false">Nie</option>
                 <option value="true">Tak</option>
             </select>
 
             <label for="selectAnswersImmediately" class="labelsForSettings">Czy pokazywać odpowiedzi odrazu</label>
-            <select name="answersImmediately" id="selectAnswersImmediately">
+            <select name="answersImmediately" id="selectAnswersImmediately" class="inputs">
                 <option value="true">Tak</option>
                 <option value="false">Nie</option>
             </select>
 
             <input type="button" value="Dalej" id="settingsPageButtonId" class="buttonPage">
         </div>
+    </div>
+
+    <div id="userInitializationPage" class="page">
+
     </div>
 
     <div id="gamePage" class="page">

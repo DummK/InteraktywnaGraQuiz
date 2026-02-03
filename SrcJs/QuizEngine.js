@@ -3,7 +3,7 @@ import {EasyQuestionFactor, MediumQuestionFactor, HardQuestionFactor, ExtremeQue
 
 export class QuizEngine {
 
-    run(){}
+    static run(){}
 
     randomizingQuestion() {
         const minCeiled = Math.ceil(0);

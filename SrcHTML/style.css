@@ -9,9 +9,10 @@ body {
     display: none;
     margin-left: 20%;
     margin-right: 20%;
-    height: 50vw;
+    height: auto;
     background-color: rgba(146, 158, 158, 0.5);
     border-radius: 10px;
+    padding-bottom: 2vw;
 }
 
 .page.active {
@@ -28,6 +29,30 @@ body {
     justify-content: flex-start;
     flex-direction: column;
     row-gap: 3vw;
+}
+
+#userInitializationPage {
+    justify-content: flex-start;
+    flex-direction: column;
+    row-gap: 1vw;
+}
+
+.userInitializationPageTitle > h1 {
+    font-size: 2vw;
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+.userInitializationPageForm {
+    display: flex;
+    justify-content: center;
+
+}
+
+.userInitializationPageButton {
+    display: flex;
+    justify-content: center;
 }
 
 .settingsPageTitle > h1 {
@@ -87,7 +112,9 @@ body {
 
 .labelsForSettings {
     font-family: 'Rubik', sans-serif;
-    font-size: 1.5vw;
+    letter-spacing: 0.3vw;
+    font-size: 2vw;
+    font-weight: normal;
 }
 
 .settingsPageForm {
@@ -95,5 +122,14 @@ body {
     flex-direction: column;
     align-items: center;
     row-gap: 0.5vw;
+}
+
+.inputs {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-size: 2vw;
+    width: auto;
+    background-color: rgba(67, 124, 238, 0.66);
 }
 
