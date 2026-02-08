@@ -1,5 +1,6 @@
 //categories = 'all' | 'java' | 'html' | 'javascript' | 'programming' | 'css' | 'www' | 'cpp' | 'oop' | 'security' | 'http' | 'algorithms' | 'memory' | 'threads'
 
+//klasa z wszystkimi ustawieniami gry
 export class Settings {
     constructor(
         playerAmount = 1,
@@ -17,6 +18,7 @@ export class Settings {
         this.categories = categories;
     }
 
+    //funkcja do aktualizacji ustawień
     updateSettings(settings) {
         if (!settings) return;
 

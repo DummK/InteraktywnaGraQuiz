@@ -1,10 +1,13 @@
 import { Settings } from '../gameMechanics/Settings.js';
 
+//funkcja zapisująca ustawienia
 export function saveSettings() {
     const userAmount = Number(document.getElementById('users').value);
 
     if (!Number.isInteger(userAmount) || userAmount <= 0) {
-        alert('Liczba użytkowników musi być wieksza od 0');
+        alert(!Number.isInteger(userAmount)
+            ? 'Należy wprowadzić liczbę!'
+            : 'Liczba użytkowników musi być większa od 0');
         return undefined;
     }
 

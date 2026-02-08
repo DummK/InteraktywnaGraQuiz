@@ -1,8 +1,10 @@
+//stałe wartości przeliczników punktów dla trudności pytań
 export const EasyQuestionFactor = 0.8
 export const MediumQuestionFactor = 1.2
 export const HardQuestionFactor = 1.6
 export const ExtremeQuestionFactor = 2
 
+//klasa zawierająca wszystkie informacje z pytaniami
 export class Question {
     constructor(
         questionContent,

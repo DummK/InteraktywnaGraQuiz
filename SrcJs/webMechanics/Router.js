@@ -1,3 +1,4 @@
+//funkcja do aktywowania niewidocznych stron
 export function changeVisibility(from, to) {
     const fromElement = document.getElementById(from);
     const toElement = document.getElementById(to);

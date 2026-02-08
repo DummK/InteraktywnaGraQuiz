@@ -1,9 +1,10 @@
 import {table} from "./tableOfQuestions";
 import {EasyQuestionFactor, MediumQuestionFactor, HardQuestionFactor, ExtremeQuestionFactor, Question}  from "./gameMechanics/Question";
 
+//klasa silnika uruchamiająca gre
 export class QuizEngine {
 
-    static run(){}
+    static runQuiz(){}
 
     randomizingQuestion() {
         const minCeiled = Math.ceil(0);

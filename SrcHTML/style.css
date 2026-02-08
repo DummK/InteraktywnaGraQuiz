@@ -1,67 +1,81 @@
+/* Tło strony */
 body {
-    background-image: url("res/background.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: rgb(26, 50, 99);
 }
 
+/* Wygląd pól formularzy */
+.inputs {
+    all: unset;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-size: 2vw;
+    width: auto;
+    background-color: rgb(250, 185, 91);
+    box-shadow:
+            0 0 calc(0.2em + 0.2vw) rgba(250, 185, 91, 0.9),
+            0 0 calc(0.6em + 0.4vw) rgba(250, 185, 91, 0.75),
+            0 0 calc(1.2em + 0.8vw) rgba(250, 185, 91, 0.55),
+            0 0 calc(1.8em + 1vw)   rgba(250, 185, 91, 0.35);
+    cursor: pointer;
+    border-radius: 0.5vw;
+    padding: 0.3vw;
+}
+#users {
+    cursor: text !important;
+}
+
+/* Wygląd strony nie aktywnej */
 .page {
     display: none;
     margin-left: 20%;
     margin-right: 20%;
     height: auto;
-    background-color: rgba(146, 158, 158, 0.5);
-    border-radius: 10px;
+    background-color: rgba(84, 119, 146, 0.6);
+    border-radius: 2vw;
     padding-bottom: 2vw;
 }
 
+/* Wygląd strony aktywowanej przez skrypt */
 .page.active {
     display: flex;
 }
 
+/* Wygląd przycisków na stronie */
+.buttonPage {
+    all: unset;
+    appearance: none;
+    width: 18vw;
+    height: 5vw;
+    color: rgb(232, 226, 219);
+    font-size: 4vw;
+    background-color: rgb(250, 185, 91);
+    text-align: center;
+    border: rgb(220, 155, 61) solid 0.2vw;
+    border-radius: 1vw;
+}
+.buttonPage:hover {
+    background-color: rgba(250, 185, 91, 0.7);
+    cursor: pointer;
+}
+.buttonPage:active {
+    background-color: rgb(220, 155, 61);
+    border: rgb(250, 185, 91) solid 0.2vw;
+}
+
+/* Wygląd strony startowej */
 #startPage {
     justify-content: flex-start;
     flex-direction: column;
     row-gap: 12vw;
 }
-
-#settingsPage {
-    justify-content: flex-start;
-    flex-direction: column;
-    row-gap: 3vw;
+@keyframes colorShift {
+    0% {color: rgb(250, 185, 91)}
+    25% {color: rgb(232, 226, 219)}
+    50% {color: rgb(250, 185, 91)}
+    75% {color: rgb(232, 226, 219)}
+    100% {color: rgb(250, 185, 91)}
 }
-
-#userInitializationPage {
-    justify-content: flex-start;
-    flex-direction: column;
-    row-gap: 1vw;
-}
-
-.userInitializationPageTitle > h1 {
-    font-size: 2vw;
-    font-family: 'Rubik', sans-serif;
-    font-weight: normal;
-    text-align: center;
-}
-
-.userInitializationPageForm {
-    display: flex;
-    justify-content: center;
-
-}
-
-.userInitializationPageButton {
-    display: flex;
-    justify-content: center;
-}
-
-.settingsPageTitle > h1 {
-    font-size: 3vw;
-    font-family: 'Rubik', sans-serif;
-    font-weight: normal;
-    text-align: center;
-}
-
 .startPageTitle > h1 {
     font-weight: normal;
     font-size: 5vw;
@@ -71,65 +85,103 @@ body {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
-
-@keyframes colorShift {
-    0% {color: black}
-    25% {color: #ffffff}
-    50% {color: black}
-    75% {color: #ffffff}
-    100% {color: black}
-}
-
 .startPageTitle {
     text-align: center;
 }
-
-.buttonPage {
-    all: unset;
-    appearance: none;
-    width: 15vw;
-    height: 3vw;
-    font-size: 2vw;
-    background-color: green;
-    text-align: center;
-    border: darkgreen solid 0.2vw;
-}
-
 .startPagePlayButton {
     display: flex;
     justify-content: center;
 }
-
-.buttonPage:hover {
-    background-color: rgba(0, 100, 0, 0.7);
-    cursor: pointer;
+.startPagePlayButton > input {
+    width: 36vw;
+    height: 12vw;
+    font-size: 7vw;
 }
 
-.buttonPage:active {
-    background-color: darkgreen;
-    border: green solid 0.2vw;
+/* Wygląd strony z ustawieniami */
+#settingsPage {
+    justify-content: flex-start;
+    flex-direction: column;
+    row-gap: 3vw;
 }
-
+.settingsPageTitle > h1 {
+    font-size: 5vw;
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    animation-name: colorShift;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
 .labelsForSettings {
     font-family: 'Rubik', sans-serif;
     letter-spacing: 0.3vw;
+    color: rgb(232, 226, 219);
     font-size: 2vw;
     font-weight: normal;
 }
-
 .settingsPageForm {
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 0.5vw;
 }
-
-.inputs {
-    text-align: center;
+.categories {
+    user-select: none;
+    color: rgb(232, 226, 219);
     font-family: 'Rubik', sans-serif;
-    color: white;
-    font-size: 2vw;
-    width: auto;
-    background-color: rgba(67, 124, 238, 0.66);
+    font-size: 3vw;
+    text-shadow:
+            0 0 calc(0.15em + 0.1vw) rgba(250, 185, 91, 0.66),
+            0 0 calc(0.35em + 0.2vw) rgba(250, 185, 91, 0.66),
+            0 0 calc(0.6em + 0.3vw)  rgba(250, 185, 91, 0.66);
+    cursor: pointer;
+    display: inline-block;
 }
+.categories input {
+    display: none;
+}
+.categories span {
+    display: inline-block;
+    transition: transform 0.25s ease, text-shadow 0.15s ease, color 0.15s ease;
+}
+.categories:not(:has(input:checked)):hover span {
+    transform: scale(1.5);
+}
+.categories input:checked + span {
+    transform: scale(1.2);
+    color: rgb(250, 185, 91);
+    text-shadow:
+            0 0 calc(0.15em + 0.1vw) rgba(232, 226, 219, 0.66),
+            0 0 calc(0.35em + 0.2vw) rgba(232, 226, 219, 0.66),
+            0 0 calc(0.6em + 0.3vw)  rgba(232, 226, 219, 0.66);
+}
+
+/* Wygląd strony do inicjalizacji użytkowników */
+#userInitializationPage {
+    justify-content: flex-start;
+    flex-direction: column;
+    row-gap: 1vw;
+}
+.userInitializationPageTitle > h1 {
+    color: rgb(232, 226, 219);
+    font-size: 2vw;
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+.userInitializationPageForm {
+    display: flex;
+    justify-content: center;
+
+}
+.userInitializationPageButton {
+    display: flex;
+    justify-content: center;
+}
+.userInitializationPageForm > .inputs {
+    cursor: text !important;
+}
+
 

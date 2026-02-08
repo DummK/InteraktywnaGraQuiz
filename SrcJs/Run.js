@@ -27,13 +27,15 @@
 *
 * */
 import {changeVisibility} from "./webMechanics/Router.js";
-import {saveSettings} from "./webMechanics/FormSubmitter.js";
+import {saveSettings} from "./webMechanics/SettingsFormSubmitter.js";
 import {Settings} from "./gameMechanics/Settings.js";
-import {createForm} from "./webMechanics/UserInitialize.js";
+import {createFormForUsers, createPlayers} from "./webMechanics/UserInitialize.js";
+
 
 let settings = new Settings();
+let tableOfPlayers = [];
 
-
+//Przejście do strony z ustawieniami
 document.addEventListener("DOMContentLoaded", () => {
     const btn = document.getElementById("startPageButtonId");
     if (btn) {
@@ -43,16 +45,28 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+//Zapisanie zmian w ustawieniach oraz przejście do strony z inicjalizacją użytkowników
 document.addEventListener("DOMContentLoaded", () => {
     const btn = document.getElementById("settingsPageButtonId");
     if (btn) {
         btn.addEventListener("click", () => {
             if(saveSettings() !== undefined) {
                 settings.updateSettings(saveSettings());
-                createForm(settings.playerAmount)
+                createFormForUsers(settings.playerAmount)
                 changeVisibility('settingsPage', 'userInitializationPage');
             }
-        })
+        });
     }
-})
+});
+
+//Zapisanie użytkowników do tablicy i przejście do gry
+document.addEventListener("click", (e) => {
+    if (e.target.id === "userInitializationPageButtonId") {
+        for (let i = 0; i < settings.playerAmount; i++) {
+            tableOfPlayers.push(createPlayers(i));
+        }
+
+        changeVisibility('userInitializationPage', 'gamePage');
+    }
+});
 

@@ -1,5 +1,6 @@
 import {Question} from "./gameMechanics/Question";
 
+//tablica z pytaniami
 export const table = [];
 {
     table.push(new Question(
