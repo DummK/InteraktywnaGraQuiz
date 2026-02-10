@@ -27,13 +27,14 @@
 *
 * */
 import {changeVisibility} from "./webMechanics/Router.js";
-import {saveSettings} from "./webMechanics/SettingsFormSubmitter.js";
+import {changeSettings, saveSettings} from "./webMechanics/SettingsFormSubmitter.js";
 import {Settings} from "./gameMechanics/Settings.js";
 import {createFormForUsers, createPlayers} from "./webMechanics/UserInitialize.js";
-
+import {QuizEngine} from "./QuizEngine.js";
 
 let settings = new Settings();
 let tableOfPlayers = [];
+let quizEngine = new QuizEngine(settings, tableOfPlayers);
 
 //Przejście do strony z ustawieniami
 document.addEventListener("DOMContentLoaded", () => {
@@ -54,19 +55,63 @@ document.addEventListener("DOMContentLoaded", () => {
                 settings.updateSettings(saveSettings());
                 createFormForUsers(settings.playerAmount)
                 changeVisibility('settingsPage', 'userInitializationPage');
+                console.log(settings);
             }
         });
     }
 });
 
 //Zapisanie użytkowników do tablicy i przejście do gry
-document.addEventListener("click", (e) => {
+document.addEventListener("click", async(e) => {
     if (e.target.id === "userInitializationPageButtonId") {
         for (let i = 0; i < settings.playerAmount; i++) {
-            tableOfPlayers.push(createPlayers(i));
+            const player = createPlayers(i);
+            if (!player) {
+                alert(`Wypełnij wszystkie pola dla użytkownika ${i + 1}`);
+                return; // wychodzimy z funkcji, nie przechodzimy dalej
+            }
+            tableOfPlayers.push(player);
+        }
+        changeVisibility('userInitializationPage', 'gamePage');
+        await quizEngine.startQuiz();
+    }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("buttonsPageSettingsButtonId");
+    if (btn) {
+        btn.addEventListener("click", () => {
+            changeVisibility('gamePage', 'dynamicSettingsPage');
+        });
+    }
+});
+
+document.addEventListener("DOMContentLoaded", async () => {
+    const btn = document.getElementById("dynamicSettingsPageButtonId");
+    if (btn) {
+        btn.addEventListener("click", () => {
+            if(changeSettings(settings.playerAmount) !== undefined) {
+                settings.updateSettings(changeSettings(settings.playerAmount));
+                quizEngine.startQuiz()
+                changeVisibility('dynamicSettingsPage', 'gamePage');
+                console.log(settings);
+            }
+        });
+    }
+});
+
+//to robił chatGPT(zbyt trudne, nic nie rozumiem)
+document.addEventListener("click", (e) => {
+    if (e.target.id === "buttonsPageConfirmButtonId") {
+        const userAnswer = quizEngine.getUserAnswer(); // pobiera zaznaczone radio
+        if (!userAnswer) {
+            alert("Nie zaznaczono odpowiedzi!");
+            return;
         }
 
-        changeVisibility('userInitializationPage', 'gamePage');
+        document.dispatchEvent(
+            new CustomEvent("answerSelected", { detail: { answer: userAnswer } })
+        );
     }
 });
 

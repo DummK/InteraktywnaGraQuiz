@@ -20,13 +20,40 @@ export class Question {
         this.difficulty = difficulty;
     }
 
-    showQuestion() {
-        console.log(`Kategoria: ${this.category}, trudność: ${this.difficulty}`);
-        console.log(this.questionContent)
+    initializeQuestion() {
+        const gamePageQuestionDiv = document.getElementById("gamePageQuestionContent");
+        const answersPageDiv = document.getElementById("answersPage");
 
-        let letters = ["a", "b", "c", "d"];
+        const questionContentElement = document.createElement("h1");
+        questionContentElement.textContent = this.questionContent;
+        questionContentElement.id = "questionContentId";
+        gamePageQuestionDiv.appendChild(questionContentElement);
+
         for(let i = 0; i < 4; i++) {
-            console.log(`${letters[i]}) ${this.answers[i]}`);
+            const labelElement = document.createElement("label");
+            const radioElement = document.createElement("input");
+            const spanElement = document.createElement("span");
+
+            radioElement.type = "radio";
+            radioElement.id = `checkboxElementId${i}`;
+            radioElement.name = "answers";
+
+            spanElement.textContent = this.answers[i];
+
+            labelElement.htmlFor = radioElement.id;
+            labelElement.className = "categories";
+
+            switch(i) {
+                case 0: radioElement.value = "A"; break;
+                case 1: radioElement.value = "B"; break;
+                case 2: radioElement.value = "C"; break;
+                case 3: radioElement.value = "D"; break;
+            }
+
+            labelElement.appendChild(radioElement);
+            labelElement.appendChild(spanElement);
+
+            answersPageDiv.appendChild(labelElement);
         }
     }
 }

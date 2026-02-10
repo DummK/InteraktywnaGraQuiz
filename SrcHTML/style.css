@@ -28,14 +28,12 @@ body {
 /* Wygląd strony nie aktywnej */
 .page {
     display: none;
-    margin-left: 20%;
-    margin-right: 20%;
+    width: auto;
     height: auto;
     background-color: rgba(84, 119, 146, 0.6);
     border-radius: 2vw;
     padding-bottom: 2vw;
 }
-
 /* Wygląd strony aktywowanej przez skrypt */
 .page.active {
     display: flex;
@@ -127,11 +125,13 @@ body {
     align-items: center;
     row-gap: 0.5vw;
 }
+
+/* Wygląd wsztykich inputów typu radio, checkbox*/
 .categories {
     user-select: none;
     color: rgb(232, 226, 219);
     font-family: 'Rubik', sans-serif;
-    font-size: 3vw;
+    font-size: 2vw;
     text-shadow:
             0 0 calc(0.15em + 0.1vw) rgba(250, 185, 91, 0.66),
             0 0 calc(0.35em + 0.2vw) rgba(250, 185, 91, 0.66),
@@ -182,6 +182,45 @@ body {
 }
 .userInitializationPageForm > .inputs {
     cursor: text !important;
+}
+
+#gamePage {
+    flex-direction: column;
+}
+#gamePageQuestionContent > h1 {
+    font-size: 3vw;
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    animation-name: colorShift;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#answersPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#playerTurnPage > h1 {
+    font-size: 2vw;
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    animation-name: colorShift;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#buttonsPage {
+    display: flex;
+    justify-content: space-around;
+}
+
+#dynamicSettingsPage {
+    justify-content: flex-start;
+    flex-direction: column;
+    row-gap: 3vw;
 }
 
 

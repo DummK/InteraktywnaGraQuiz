@@ -40,7 +40,12 @@ export function createFormForUsers(usersAmount) {
 
 //funkcja tworzy Gracza
 export function createPlayers(index) {
-    return new Player(
-        document.getElementById(`usernameInputId${index}`).value,
-    )
+    const inputElement = document.getElementById(`usernameInputId${index}`);
+
+    // sprawdzenie czy element istnieje i czy wartość nie jest pusta
+    if (!inputElement || inputElement.value === "") {
+        return undefined;
+    }
+
+    return new Player(inputElement.value);
 }

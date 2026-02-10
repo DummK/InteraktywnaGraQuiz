@@ -54,31 +54,97 @@
             </select>
 
                 <label class="labelsForSettings">Wybierz kategorie pytań</label>
-                <label for="inputCategoryAll" class="categories"><input type="checkbox" id="inputCategoryAll"><span>jakakolwiek</span></label>
-                <label for="inputCategoryJava" class="categories"><input type="checkbox" id="inputCategoryJava"><span>java</span></label>
-                <label for="inputCategoryHtml" class="categories"><input type="checkbox" id="inputCategoryHtml"><span>html</span></label>
-                <label for="inputCategoryJavascript" class="categories"><input type="checkbox" id="inputCategoryJavascript"><span>javascript</span></label>
-                <label for="inputCategoryProgramming" class="categories"><input type="checkbox" id="inputCategoryProgramming"><span>programowanie</span></label>
-                <label for="inputCategoryCss" class="categories"><input type="checkbox" id="inputCategoryCss"><span>css</span></label>
-                <label for="inputCategoryWww" class="categories"><input type="checkbox" id="inputCategoryWww"><span>www</span></label>
-                <label for="inputCategoryCpp" class="categories"><input type="checkbox" id="inputCategoryCpp"><span>cpp</span></label>
-                <label for="inputCategoryOop" class="categories"><input type="checkbox" id="inputCategoryOop"><span>oop</span></label>
-                <label for="inputCategorySecurity" class="categories"><input type="checkbox" id="inputCategorySecurity"><span>bezpieczeństwo</span></label>
-                <label for="inputCategoryHttp" class="categories"><input type="checkbox" id="inputCategoryHttp"><span>http</span></label>
-                <label for="inputCategoryAlgorithms" class="categories"><input type="checkbox" id="inputCategoryAlgorithms"><span>algorytmy</span></label>
-                <label for="inputCategoryMemory" class="categories"><input type="checkbox" id="inputCategoryMemory"><span>pamieć</span></label>
-                <label for="inputCategoryThreads" class="categories"><input type="checkbox" id="inputCategoryThreads"><span>wątki</span></label>
+                <label for="inputCategoryAll" class="categories"><input type="checkbox" id="inputCategoryAll" checked><span>jakakolwiek</span></label>
+                <label for="inputCategoryJava" class="categories"><input type="checkbox" id="inputCategoryJava" class="inputCheckboxClass" value="java"><span>java</span></label>
+                <label for="inputCategoryHtml" class="categories"><input type="checkbox" id="inputCategoryHtml" class="inputCheckboxClass" value="html"><span>html</span></label>
+                <label for="inputCategoryJavascript" class="categories"><input type="checkbox" id="inputCategoryJavascript" class="inputCheckboxClass" value="javascript"><span>javascript</span></label>
+                <label for="inputCategoryProgramming" class="categories"><input type="checkbox" id="inputCategoryProgramming" class="inputCheckboxClass" value="programming"><span>programowanie</span></label>
+                <label for="inputCategoryCss" class="categories"><input type="checkbox" id="inputCategoryCss" class="inputCheckboxClass" value="css"><span>css</span></label>
+                <label for="inputCategoryWww" class="categories"><input type="checkbox" id="inputCategoryWww" class="inputCheckboxClass" value="www"><span>www</span></label>
+                <label for="inputCategoryCpp" class="categories"><input type="checkbox" id="inputCategoryCpp" class="inputCheckboxClass" value="cpp"><span>c++</span></label>
+                <label for="inputCategoryOop" class="categories"><input type="checkbox" id="inputCategoryOop" class="inputCheckboxClass" value="oop"><span>oop</span></label>
+                <label for="inputCategorySecurity" class="categories"><input type="checkbox" id="inputCategorySecurity" class="inputCheckboxClass" value="security"><span>bezpieczeństwo</span></label>
+                <label for="inputCategoryHttp" class="categories"><input type="checkbox" id="inputCategoryHttp" class="inputCheckboxClass" value="http"><span>http</span></label>
+                <label for="inputCategoryAlgorithms" class="categories"><input type="checkbox" id="inputCategoryAlgorithms" class="inputCheckboxClass" value="algorithms"><span>algorytmy</span></label>
+                <label for="inputCategoryMemory" class="categories"><input type="checkbox" id="inputCategoryMemory" class="inputCheckboxClass" value="memory"><span>pamieć</span></label>
+                <label for="inputCategoryThreads" class="categories"><input type="checkbox" id="inputCategoryThreads" class="inputCheckboxClass" value="threads"><span>wątki</span></label>
 
             <input type="button" value="Dalej" id="settingsPageButtonId" class="buttonPage">
+        </div>
+    </div>
+
+    <!-- Blok zawierający formularz ze zmianą ustawien w czasie gry -->
+    <div id="dynamicSettingsPage" class="page">
+        <div class="settingsPageTitle">
+            <h1>Zmień swoje ustawienia</h1>
+        </div>
+        <div class="settingsPageForm">
+            <label for="changeDifficulty" class="labelsForSettings">Wybierz trudność pytań</label>
+            <select name="difficulty" id="changeDifficulty" class="inputs">
+                <option value="all">Jakakolwiek</option>
+                <option value="easy">Łatwa</option>
+                <option value="medium">Średnia</option>
+                <option value="hard">Trudna</option>
+                <option value="Extreme">Ekstremalna</option>
+            </select>
+
+            <label for="changeAchievements" class="labelsForSettings">Czy włączyć osiągnięcia</label>
+            <select name="achievements" id="changeAchievements" class="inputs">
+                <option value="true">Tak</option>
+                <option value="false">Nie</option>
+            </select>
+
+            <label for="changeTimeMode" class="labelsForSettings">Czy włączyć ograniczenie czasowe</label>
+            <select name="timeMode" id="changeTimeMode" class="inputs">
+                <option value="false">Nie</option>
+                <option value="true">Tak</option>
+            </select>
+
+            <label for="changeAnswersImmediately" class="labelsForSettings">Czy pokazywać odpowiedzi odrazu</label>
+            <select name="answersImmediately" id="changeAnswersImmediately" class="inputs">
+                <option value="true">Tak</option>
+                <option value="false">Nie</option>
+            </select>
+
+            <label class="labelsForSettings">Wybierz kategorie pytań</label>
+            <label for="changeCategoryAll" class="categories"><input type="checkbox" id="changeCategoryAll" checked><span>jakakolwiek</span></label>
+            <label for="changeCategoryJava" class="categories"><input type="checkbox" id="changeCategoryJava" class="changeCheckboxClass" value="java"><span>java</span></label>
+            <label for="changeCategoryHtml" class="categories"><input type="checkbox" id="changeCategoryHtml" class="changeCheckboxClass" value="html"><span>html</span></label>
+            <label for="changeCategoryJavascript" class="categories"><input type="checkbox" id="changeCategoryJavascript" class="changeCheckboxClass" value="javascript"><span>javascript</span></label>
+            <label for="changeCategoryProgramming" class="categories"><input type="checkbox" id="changeCategoryProgramming" class="changeCheckboxClass" value="programming"><span>programowanie</span></label>
+            <label for="changeCategoryCss" class="categories"><input type="checkbox" id="changeCategoryCss" class="changeCheckboxClass" value="css"><span>css</span></label>
+            <label for="changeCategoryWww" class="categories"><input type="checkbox" id="changeCategoryWww" class="changeCheckboxClass" value="www"><span>www</span></label>
+            <label for="changeCategoryCpp" class="categories"><input type="checkbox" id="changeCategoryCpp" class="changeCheckboxClass" value="cpp"><span>c++</span></label>
+            <label for="changeCategoryOop" class="categories"><input type="checkbox" id="changeCategoryOop" class="changeCheckboxClass" value="oop"><span>oop</span></label>
+            <label for="changeCategorySecurity" class="categories"><input type="checkbox" id="changeCategorySecurity" class="changeCheckboxClass" value="security"><span>bezpieczeństwo</span></label>
+            <label for="changeCategoryHttp" class="categories"><input type="checkbox" id="changeCategoryHttp" class="changeCheckboxClass" value="http"><span>http</span></label>
+            <label for="changeCategoryAlgorithms" class="categories"><input type="checkbox" id="changeCategoryAlgorithms" class="changeCheckboxClass" value="algorithms"><span>algorytmy</span></label>
+            <label for="changeCategoryMemory" class="categories"><input type="checkbox" id="changeCategoryMemory" class="changeCheckboxClass" value="memory"><span>pamieć</span></label>
+            <label for="changeCategoryThreads" class="categories"><input type="checkbox" id="changeCategoryThreads" class="changeCheckboxClass" value="threads"><span>wątki</span></label>
+
+            <input type="button" value="Zapisz" id="dynamicSettingsPageButtonId" class="buttonPage">
         </div>
     </div>
 
     <!-- Blok jest utworzony za pomocą funkcji w klasie UserInitialize -->
     <div id="userInitializationPage" class="page"></div>
 
+    <!-- Blok jest uworzony za  -->
     <div id="gamePage" class="page">
+        <div id="playerTurnPage"></div>
 
+        <div id="gamePageQuestionContent"></div>
+
+        <div id="answersPage"></div>
+
+        <div id="timerPage"></div>
+
+        <div id="buttonsPage">
+            <input type="button" value="Ustawienia" id="buttonsPageSettingsButtonId" class="buttonPage">
+            <input type="button" value="Zatwierdź pytanie" id="buttonsPageConfirmButtonId" class="buttonPage">
+        </div>
     </div>
+
 
     <div id="summaryPage" class="page">
 

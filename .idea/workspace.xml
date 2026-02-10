@@ -10,13 +10,11 @@
       <change beforePath="$PROJECT_DIR$/SrcHTML/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/SrcHTML/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SrcJs/QuizEngine.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/QuizEngine.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SrcJs/Run.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/Run.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SrcJs/gameMechanics/Achievements.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/gameMechanics/Achievements.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SrcJs/gameMechanics/Player.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/gameMechanics/Player.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SrcJs/gameMechanics/Question.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/gameMechanics/Question.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SrcJs/gameMechanics/Settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/gameMechanics/Settings.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SrcJs/tableOfQuestions.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/tableOfQuestions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SrcJs/webMechanics/FormSubmitter.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/webMechanics/SettingsFormSubmitter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SrcJs/webMechanics/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/webMechanics/Router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SrcJs/webMechanics/SettingsFormSubmitter.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/webMechanics/SettingsFormSubmitter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SrcJs/webMechanics/UserInitialize.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/webMechanics/UserInitialize.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +119,9 @@
       <workItem from="1770041213726" duration="14448000" />
       <workItem from="1770127427466" duration="8961000" />
       <workItem from="1770480432029" duration="1956000" />
-      <workItem from="1770498923578" duration="14304000" />
+      <workItem from="1770498923578" duration="14504000" />
+      <workItem from="1770554142958" duration="21185000" />
+      <workItem from="1770662912209" duration="2715000" />
     </task>
     <servers />
   </component>

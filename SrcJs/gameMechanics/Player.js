@@ -13,4 +13,16 @@ export class Player {
         this.highestScore = highestScore;
         this.achievements = achievements;
     }
+
+    showTurn() {
+        const playerTurnTitleElement = document.createElement("h1");
+        const playerTurnDivElement = document.getElementById("playerTurnPage");
+
+        playerTurnDivElement.replaceChildren();
+
+        playerTurnTitleElement.textContent = `Teraz odpowiada gracz ${this.name}`;
+        playerTurnTitleElement.id = "playerTurnTitleId";
+
+        playerTurnDivElement.appendChild(playerTurnTitleElement);
+    }
 }

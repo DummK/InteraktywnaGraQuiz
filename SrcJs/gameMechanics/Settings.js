@@ -29,4 +29,6 @@ export class Settings {
         if (settings.showAnswerImmediately != null) this.showAnswerImmediately = settings.showAnswerImmediately;
         if (settings.categories != null) this.categories = settings.categories;
     }
+
+
 }
