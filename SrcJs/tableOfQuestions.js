@@ -231,7 +231,7 @@ export const table = [];
 
     table.push(new Question(
         "Który znacznik HTML służy do tworzenia listy numerowanej?",
-        ["<ul>", "<li>", "<ol>", "<dl>"],
+        ["< ul >", "< li >", "< ol >", "< dl >"],
         "C", "html", "easy"
     ));
 

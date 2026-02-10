@@ -216,6 +216,19 @@ body {
     display: flex;
     justify-content: space-around;
 }
+#timerPage {
+    display: flex;
+    justify-content: center;
+    color: rgb(232, 226, 219);
+    font-family: 'Rubik', sans-serif;
+    font-size: 2vw;
+}
+#userAnswerPage {
+    display: flex;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 2vw;
+}
 
 #dynamicSettingsPage {
     justify-content: flex-start;

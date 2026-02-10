@@ -56,5 +56,16 @@ export class Question {
             answersPageDiv.appendChild(labelElement);
         }
     }
+
+    getPoints() {
+        let base = 10; // każdy question ma bazowo 10 punktów
+        switch(this.difficulty.toLowerCase()) {
+            case "easy": return Math.round(base * EasyQuestionFactor);
+            case "medium": return Math.round(base * MediumQuestionFactor);
+            case "hard": return Math.round(base * HardQuestionFactor);
+            case "extreme": return Math.round(base * ExtremeQuestionFactor);
+            default: return base;
+        }
+    }
 }
 

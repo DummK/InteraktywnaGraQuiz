@@ -10,12 +10,9 @@
       <change beforePath="$PROJECT_DIR$/SrcHTML/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/SrcHTML/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SrcJs/QuizEngine.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/QuizEngine.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SrcJs/Run.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/Run.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SrcJs/gameMechanics/Player.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/gameMechanics/Player.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SrcJs/gameMechanics/Achievements.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/gameMechanics/Achievements.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SrcJs/gameMechanics/Question.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/gameMechanics/Question.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SrcJs/gameMechanics/Settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/gameMechanics/Settings.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SrcJs/tableOfQuestions.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/tableOfQuestions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SrcJs/webMechanics/SettingsFormSubmitter.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/webMechanics/SettingsFormSubmitter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SrcJs/webMechanics/UserInitialize.js" beforeDir="false" afterPath="$PROJECT_DIR$/SrcJs/webMechanics/UserInitialize.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
