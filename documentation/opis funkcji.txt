@@ -1,0 +1,210 @@
+**************************************************
+nazwa funkcji: registerAnswer
+opis funkcji: Aktualizuje serię poprawnych odpowiedzi gracza oraz przyznaje osiągnięcia na podstawie trudności pytania i długości serii.
+parametry:
+    question – obiekt Question zawierający informacje o pytaniu
+    answeredCorrectly – wartość logiczna określająca czy odpowiedź była poprawna
+zwracany typ i opis: brak – funkcja modyfikuje stan obiektu Achievements
+autor: Filip P
+**************************************************
+
+**************************************************
+nazwa funkcji: getAchievementsList
+opis funkcji: Zwraca listę zdobytych osiągnięć w postaci tablicy.
+parametry:
+    brak
+zwracany typ i opis: Array<string> – tablica nazw zdobytych osiągnięć
+autor: Sylwester S
+**************************************************
+
+**************************************************
+nazwa funkcji: showTurn
+opis funkcji: Wyświetla na stronie informację, który gracz aktualnie odpowiada.
+parametry:
+    brak
+zwracany typ i opis: brak – funkcja modyfikuje DOM
+autor: Filip P
+**************************************************
+
+**************************************************
+nazwa funkcji: initializeQuestion
+opis funkcji: Tworzy dynamicznie w DOM treść pytania oraz cztery odpowiedzi w postaci przycisków radio.
+parametry:
+    brak
+zwracany typ i opis: brak – funkcja generuje elementy HTML
+autor: Filip P
+**************************************************
+
+**************************************************
+nazwa funkcji: getPoints
+opis funkcji: Oblicza liczbę punktów za pytanie w zależności od poziomu trudności.
+parametry:
+    brak
+zwracany typ i opis: number – liczba punktów za pytanie
+autor: Sylwester S
+**************************************************
+
+**************************************************
+nazwa funkcji: updateSettings
+opis funkcji: Aktualizuje właściwości obiektu Settings na podstawie przekazanego obiektu ustawień.
+parametry:
+    settings – obiekt zawierający nowe wartości ustawień
+zwracany typ i opis: brak – funkcja modyfikuje stan obiektu Settings
+autor: Sylwester S
+**************************************************
+
+**************************************************
+nazwa funkcji: changeVisibility
+opis funkcji: Przełącza widoczność stron aplikacji poprzez zmianę klasy "active".
+parametry:
+    from – identyfikator aktualnej strony
+    to – identyfikator strony docelowej
+zwracany typ i opis: brak – funkcja modyfikuje DOM
+autor: Sylwester S
+**************************************************
+
+**************************************************
+nazwa funkcji: saveSettings
+opis funkcji: Pobiera dane z formularza ustawień, waliduje je oraz tworzy nowy obiekt Settings.
+parametry:
+    brak
+zwracany typ i opis: Settings – nowy obiekt ustawień lub undefined w przypadku błędu walidacji
+autor: Filip P
+**************************************************
+
+**************************************************
+nazwa funkcji: changeSettings
+opis funkcji: Pobiera dane z formularza dynamicznej zmiany ustawień i zwraca nowy obiekt Settings.
+parametry:
+    userAmount – liczba graczy przekazana z aktualnych ustawień
+zwracany typ i opis: Settings – nowy obiekt ustawień lub undefined w przypadku błędu
+autor: Filip P
+**************************************************
+
+**************************************************
+nazwa funkcji: createFormForUsers
+opis funkcji: Dynamicznie tworzy formularz do wprowadzania nazw graczy.
+parametry:
+    usersAmount – liczba graczy
+zwracany typ i opis: brak – funkcja generuje elementy HTML
+autor: Filip P
+**************************************************
+
+**************************************************
+nazwa funkcji: createPlayers
+opis funkcji: Tworzy obiekt Player na podstawie danych wpisanych w formularzu.
+parametry:
+    index – indeks gracza
+zwracany typ i opis: Player – nowy obiekt gracza lub undefined gdy dane są niepoprawne
+autor: Sylwester S
+**************************************************
+
+**************************************************
+nazwa funkcji: startQuiz
+opis funkcji: Inicjalizuje, uruchamia i nadzoruje pełny przebieg gry, a po zakończeniu wyświetla podsumowanie.
+parametry:
+    brak
+zwracany typ i opis: Promise<void> – asynchroniczne uruchomienie gry
+autor: Filip P
+**************************************************
+
+**************************************************
+nazwa funkcji: resetGame
+opis funkcji: Resetuje stan gry, czyści interfejs oraz przywraca początkowe wartości gameState.
+parametry:
+    brak
+zwracany typ i opis: brak – funkcja modyfikuje stan obiektu QuizEngine
+autor: Filip P
+**************************************************
+
+**************************************************
+nazwa funkcji: initGame
+opis funkcji: Przygotowuje grę do startu poprzez filtrowanie pytań i inicjalizację struktury rund.
+parametry:
+    brak
+zwracany typ i opis: brak – w przypadku braku pytań rzuca wyjątek
+autor: Filip P
+**************************************************
+
+**************************************************
+nazwa funkcji: runGame
+opis funkcji: Główna pętla gry – iteruje po rundach i graczach, wywołując playTurn.
+parametry:
+    brak
+zwracany typ i opis: Promise<void> – asynchroniczna obsługa przebiegu gry
+autor: Filip P
+**************************************************
+
+**************************************************
+nazwa funkcji: playTurn
+opis funkcji: Obsługuje jedną turę gracza – wyświetla pytanie, czeka na odpowiedź i przyznaje punkty.
+parametry:
+    playerIndex – indeks aktualnego gracza
+    round – numer rundy
+zwracany typ i opis: Promise<void> – asynchroniczna obsługa tury
+autor: Filip P
+**************************************************
+
+**************************************************
+nazwa funkcji: filterTableOfQuestions
+opis funkcji: Filtruje tablicę pytań zgodnie z ustawieniami trudności i kategorii.
+parametry:
+    brak
+zwracany typ i opis: Array<Question> – przefiltrowana lista pytań
+autor: Filip P
+**************************************************
+
+**************************************************
+nazwa funkcji: shuffleArray
+opis funkcji: Losowo tasuje elementy tablicy przy użyciu algorytmu Fishera–Yatesa.
+parametry:
+    array – tablica do przetasowania
+zwracany typ i opis: Array – przetasowana tablica
+autor: Filip P
+**************************************************
+
+**************************************************
+nazwa funkcji: clearUI
+opis funkcji: Czyści zawartość wybranych elementów interfejsu gry.
+parametry:
+    brak
+zwracany typ i opis: brak – funkcja modyfikuje DOM
+autor: Sylwester S
+**************************************************
+
+**************************************************
+nazwa funkcji: clearTimers
+opis funkcji: Czyści zawartość elementu odpowiedzialnego za wyświetlanie timera.
+parametry:
+    brak
+zwracany typ i opis: brak – funkcja modyfikuje DOM
+autor: Sylwester S
+**************************************************
+
+**************************************************
+nazwa funkcji: waitForAnswer
+opis funkcji: Oczekuje na zdarzenie wyboru odpowiedzi przez użytkownika.
+parametry:
+    turnId – identyfikator aktualnej tury
+zwracany typ i opis: Promise<Object> – obiekt zawierający typ zdarzenia i wartość odpowiedzi
+autor: Filip P
+**************************************************
+
+**************************************************
+nazwa funkcji: waitForAnswerOrTimeout
+opis funkcji: Oczekuje na odpowiedź użytkownika lub upływ określonego czasu.
+parametry:
+    seconds – liczba sekund na odpowiedź
+    turnId – identyfikator aktualnej tury
+zwracany typ i opis: Promise<Object> – obiekt zawierający informację o odpowiedzi lub przekroczeniu czasu
+autor: Filip P
+**************************************************
+
+**************************************************
+nazwa funkcji: getUserAnswer
+opis funkcji: Pobiera zaznaczoną odpowiedź użytkownika z formularza.
+parametry:
+    brak
+zwracany typ i opis: string – litera odpowiedzi (A/B/C/D) lub undefined gdy brak wyboru
+autor: Sylwester S
+**************************************************

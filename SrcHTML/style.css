@@ -126,7 +126,7 @@ body {
     row-gap: 0.5vw;
 }
 
-/* Wygląd wsztykich inputów typu radio, checkbox*/
+/* Wygląd wsztykich inputów typu radio, checkbox */
 .categories {
     user-select: none;
     color: rgb(232, 226, 219);
@@ -184,6 +184,7 @@ body {
     cursor: text !important;
 }
 
+/* Wygląd strony gry i jej wszelkich elementów */
 #gamePage {
     flex-direction: column;
 }
@@ -230,10 +231,28 @@ body {
     font-size: 2vw;
 }
 
+/* Wygląd strony do dynamicznej zmiany ustawień */
 #dynamicSettingsPage {
     justify-content: flex-start;
     flex-direction: column;
     row-gap: 3vw;
 }
 
+#summaryPage {
+    justify-content: space-around;
+}
+
+/* Wygląd strony z wynikami */
+#summaryPagePointsDivId{
+    font-size: 3vw;
+    font-family: 'Rubik', sans-serif;
+    color: rgb(220, 155, 61);
+}
+
+#summaryPageAchievementsDivId{
+    font-size: 3vw;
+    font-family: 'Rubik', sans-serif;
+    color: rgb(232, 226, 219);
+
+}
 

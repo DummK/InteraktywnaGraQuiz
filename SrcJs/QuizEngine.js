@@ -42,12 +42,28 @@ export class QuizEngine {
         console.log("Gra zakończona");
 
         const summaryEl = document.getElementById("summaryPage");
+        const pointsDiv = document.createElement("div");
+        const achievementsDiv = document.createElement("div");
+        const pointsDivH = document.createElement("h1");
+        const achievementsDivH = document.createElement("h1");
+
+        pointsDiv.id = "summaryPagePointsDivId";
+        achievementsDiv.id = "summaryPageAchievementsDivId";
+
+        pointsDivH.textContent = "Punktacja"
+        achievementsDivH.textContent = "Osiągnięcia";
+
+
+        pointsDiv.appendChild(pointsDivH);
+        achievementsDiv.appendChild(achievementsDivH);
+
         summaryEl.replaceChildren();
+
 
         this.tableOfPlayers.forEach(p => {
             const pEl = document.createElement("p");
             pEl.textContent = `${p.name}: ${p.pointsAmount} pkt`;
-            summaryEl.appendChild(pEl);
+            pointsDiv.appendChild(pEl);
         });
 
         this.tableOfPlayers.forEach(p => {
@@ -55,11 +71,14 @@ export class QuizEngine {
             const achievementsEl = document.createElement("ul");
             p.achievements.getAchievementsList().forEach(a => {
                 const li = document.createElement("li");
-                li.textContent = a;
+                li.textContent = `${a} dla gracza ${p.name}`;
                 achievementsEl.appendChild(li);
             });
 
-            summaryEl.appendChild(achievementsEl);
+            achievementsDiv.appendChild(achievementsEl);
+
+            summaryEl.appendChild(pointsDiv);
+            summaryEl.appendChild(achievementsDiv);
         });
 
         // przechodzimy do summaryPage

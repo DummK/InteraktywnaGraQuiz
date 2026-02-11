@@ -10,9 +10,8 @@ export class Achievements {
         if (answeredCorrectly) {
             this.correctStreak++;
 
-            // Pierwsza odpowiedź poprawna
-            if (!this.earned.has("Pierwsza odpowiedź poprawna") && this.correctStreak >= 1) {
-                this.earned.add("Pierwsza odpowiedź poprawna");
+            if(!this.earned.has("Geek") && question.category === "cpp") {
+                this.earned.add("Geek");
             }
 
             // 5 poprawnych odpowiedzi z rzędu

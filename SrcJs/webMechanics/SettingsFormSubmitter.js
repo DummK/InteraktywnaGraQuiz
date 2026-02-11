@@ -54,6 +54,7 @@ export function saveSettings() {
     );
 }
 
+//funkcja zmieniająca dotychczasowe ustawienia
 export function changeSettings(userAmount) {
     let categories;
 
